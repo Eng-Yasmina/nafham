@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --color-header: #f0f0f0;
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #ffb846;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255,255,255,0.7);
+    --color-dark:#ababab;
+    --color-bbyblack:#3e3e54;
+    --color-black: #000;
+    --color-bg: #0861d6;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+body{
+    font-family: 'Tajawal', sans-serif;
+    line-height: 1.7 ;
+    color: var(--color-white);
+    background: var(--color-bg);
+}
+
+.container{width: var(--container-width-lg); margin: 0 auto;}
+
+section{
+    padding: 6rem 0;
+    
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+h1{font-size: 2.4rem; font-weight: 400;}
+h2{font-size: 2.2rem; font-weight: 400;
+    text-align: center; margin-bottom: 4rem;}
+h3{font-size: 2rem; font-weight: 400;}
+h4{font-size: 2rem; font-weight: 350;}
+h5{font-size: 1.4rem; font-weight: 390;}
+h1,h2,h3,h4,h5{line-height: 1.2;}
+
+.btn{background:url(../images/botton.svg) no-repeat; background-size: contain; background-position: center; width: 16vw; cursor: pointer;transition: var(--transition);color: var(--color-bbyblack); border: 1px solid red;
+}
+.btn:hover{background:url(../images/botton\ -\ Copy.svg) no-repeat; color: var(--color-warning);}
+
+
+.btnText{
+    display: inline-block;padding: 1rem 0;font-family: 'Tajawal', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 1.7 ;
+    }
+
+
+/* ============== HEADER ================= */
+header{
+    border: 1px solid yellow;
+    background: transparent; width: 100vw;
+    position: fixed; z-index: 999;
+    display: flex; align-items: center;
+    justify-content: space-between;
+    padding: 1rem 8rem 0;
+}
+
+/*
+.window-scroll{
+    background: var(--color-header);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+*/
+
+#headerTexure{width: 100%;position: absolute;object-fit: contain;
+    left: 0rem; top: 0; bottom: 0;
+    z-index: -1;}
+
+.logo{width: 10rem; display: inline-block; border: 1px solid red}
+
+header button {display: none;}
+
+.navigation a{
+    color: var(--color-dark);
+    font-weight: 500; font-size: 1.1em;
+    padding-right: 30px;
+    transition: var(--transition);
+}
+
+.navigation a:hover {
+    color: #00e1ff;
+}
+
+
+
+/* ============== SECTION 1 : الرئيسية ============ */
+#sec1{background: url(../images/main-bg.png) no-repeat; background-size: cover; background-position: center;}
+
+.section__container{
+    margin-top: 5rem;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+.section__left-image{width: 40vw;border: 1px solid red;}
+
+.section__right p{
+    border: 1px solid red;
+    margin:1rem 0 2.4rem;
+    font-size: 3vw;
+    line-height: 4vw;
+    font-weight: 100;
+}
+
+.section__right a{text-align: center;}
+
+
+
+  
+/* ============== SECTION 2 : التعليم الحر ================= */
+.categories{
+  padding-top: 7rem;
+  background: VAR(--color-bg1);  
+  height: 29rem;
+}
+
+
+  .categories__container {
+    border: 1px solid red;
+      display: grid;
+      grid-template-columns: 40% 60%;
+     
+  }
+
+  .categories__left h1{
+    line-height: 1; 
+    margin-bottom: 3rem;
+  }
+
+  .categories__left p{
+      margin: 1rem 0 3rem;
+      font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 100;
+    padding-left: 1rem;
+  }
+
+  .categories__left a{text-align: center;}
+
+  .categories__right{
+    border: 1px solid red;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 1.2rem;
+  }
+
+  .category{
+      background: var(--color-bg2);
+      padding: 2rem;
+      border-radius: 2rem;
+      transition: var(--transition);
+  }
+
+  .category:hover {
+      box-shadow: 0 3rem 3rem rgba(0,0,0,0.3);
+  }
+
+  .category h5{text-align: center;}
+
+
+
+
+/* ============== SECTION 3 : ساهم بشرح دروس تعليمية================= */
+.courses{
+    
+    margin-top: 10rem;
+}
+
+.courses h2{
+    border: 1px solid red;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.courses__container{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.course{
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.course:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.course__info{
+    padding: 2rem;
+}
+
+.course__info p{
+    margin: 1.2 0 2rem;
+}
+
+
+
+
+/* ============== SECTION 4 : اسال و اجب================= */
+.faqs{
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.faqs__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faqs h1{
+    margin-bottom: 3rem;
+    text-align: center;
+} 
+
+.faq{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    background: var(--color-primary);
+    cursor: pointer ;
+}
+
+.faq__icon{
+    display: inline-block; 
+    width: 3rem;
+    align-self: flex-start;
+}
+
+.faq p{
+    margin-top: 0.8rem;
+    line-height: 1.8;
+    font-size: 1.3rem;
+    display: none;
+}
+
+.faq.open p{
+    display: block;
+}
+
+
+
+/*================= SECTION 5 : أراء ======================*/
+.emo__container{
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.testimonial{
+    padding-top: 2rem;
+
+}
+
+.avatar{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 1rem solid var(--color-bg1);
+}
+
+.testimonial__info{
+    text-align: center;
+}
+
+.testimonial__body{
+    background: var(--color-primary);
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.testimonial__body::before{
+    content: "";
+    display: block;
+    background: linear-gradient(135deg, transparent, var(--color-primary), var(--color-primary), var(--color-primary));
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: rotate(45deg);
+}
+
+/*================= footer ======================*/
+footer{
+    background: var(--color-bg1);
+    padding: 5rem 0; 
+}
+
+.footer__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.footer__container > div h4 {
+    margin-bottom: 1.2rem;
+}
+
+.footer__1 p{
+    margin: 1rem 0 2rem;
+}
+
+.footer__socials{
+    display: flex;
+    gap: 1rem;
+}
+
+.soc{width: 3rem;}
