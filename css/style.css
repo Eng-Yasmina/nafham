@@ -98,7 +98,7 @@ header{
     left: 0rem; top: 0; bottom: 0;
     z-index: -1;}
 
-.logo{width: 15vw; display: inline-block; border: 1px solid red}
+.logo{width: 15vw; display: inline-block;}
 
 header button {display: none;}
 
@@ -119,18 +119,15 @@ header button {display: none;}
 
 
 .section__container{
-    
     margin-top: 5rem;
-    border: 1px solid red;
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
 }
 
-.section__left-image{width: 40vw;border: 1px solid red;}
+.section__left-image{width: 40vw;}
 
 .section__right p{
-    border: 1px solid red;
     margin-bottom:  2.4rem;
     color: var(--color-black);
     font-size: 3vw;
@@ -139,6 +136,8 @@ header button {display: none;}
 }
 
 .section__right a{text-align: center;}
+
+.btn:hover{color: var(--color-success);}
 
 
 
@@ -154,7 +153,6 @@ header button {display: none;}
 
 
   .categories__container {
-      border: 1px solid red;
       display: grid;
       grid-template-columns: 40% 60%;
      
@@ -176,7 +174,6 @@ header button {display: none;}
   .categories__left a{text-align: center;}
 
   .categories__right{
-      border: 1px solid red;
       display: grid;
       grid-template-columns: repeat(2,1fr);
       gap: 1.2rem;
@@ -202,14 +199,12 @@ header button {display: none;}
 .courses{margin-top: 10rem;}
 
 .courses h2{
-    border: 1px solid red;
     margin-bottom: 2rem;
     text-align: center;
     color: var(--color-black);
 }
 
 .courses__container{
-    border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
