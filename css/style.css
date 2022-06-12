@@ -64,7 +64,7 @@ h4{font-size: 2rem; font-weight: 350;}
 h5{font-size: 1.4rem; font-weight: 500;}
 h1,h2,h3,h4,h5{line-height: 1.2;}
 
-.btn{background:url(../images/botton.svg) no-repeat; background-size: contain; background-position: center; width: 16vw; cursor: pointer;transition: var(--transition);color: var(--color-bbyblack); border: 1px solid red;
+.btn{background:url(../images/botton.svg) no-repeat; background-size: contain; background-position: center; width: 16vw; cursor: pointer;transition: var(--transition);color: var(--color-bbyblack);
 }
 .btn:hover{background:url(../images/botton\ -\ Copy.svg) no-repeat; color: var(--color-warning);background-position-y: 2vh;}
 
@@ -137,7 +137,7 @@ header button {display: none;}
 
 .section__right a{text-align: center;}
 
-.btn:hover{color: var(--color-success);}
+.btn:hover{color: #06a7d2;}
 
 
 
