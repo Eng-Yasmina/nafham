@@ -9,36 +9,35 @@
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <style>body{background: url(images/bodybackground.png); background-size: contain;}</style>
 </head>
 <body>
 
 
 <!--================= HEADER =========================--> 
 <header>
-     
-        <nav class="navigation">
-            <a href="about.html">About Nafham</a>
+        <button id="open-menu-btn"><img src="images/hamburger.png" alt="" class="uil uil-bars"></button>
+        <button id="close-menu-btn"><img src="images/hamburger-close.png" alt="" class="uil uil-multiply"></button>
+
+        <nav dir="rtl" class="navigation header__menu">
             <a href="index.html">الرئيسية</a>
             <a href="courses.html">المناهج</a>
             <a href="contact.html">تواصل معنا</a>  
+            <a href="about.html">About Nafham</a>
         </nav>
 
         <img src="images/header.png" alt="" id="headerTexure">
         
-        
         <a href="index" class="logo"><img src="images/logo.png" alt=""></a>
 
-        <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-        <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
-     
-    </header>
+</header>
 
 
 
 
 
 <!--================= SECTION1 : الرئيسية =========================--> 
-    <section id="sec1">
+<section id="sec1">
         <div class="container section__container">
 
             <div class="section__left-image">
@@ -52,18 +51,18 @@
              </div>
             
         </div>
-    </section>
+</section>
 
 
 
 <!--================= SECTION 2 : التعليم الحر =========================-->    
-    <section class="categories">
+<section class="categories">
         <div class="container categories__container">
 
             <div class="categories__right">
                 <article class="category">
                     <span class="category__icon"><img src="images/music-app.png" alt=""></span>
-                    <h5>أساسيات النحو و الصرف</h5>
+                    <h5>أساسيات النحو </h5>
                 </article>
                 
                 <article class="category">
@@ -73,7 +72,7 @@
 
                <article class="category">
                    <span class="category__icon"><img src="images/boost-app.png" alt=""></span>
-                   <h5>أساسيات البحث العلمي</h5>
+                   <h5>أساسيات العلوم</h5>
                </article>
 
                <article class="category">
@@ -91,16 +90,16 @@
              </div>
 
         </div>
-    </section>
+</section>
 
 
 
 <!--================= SECTION 3 : ساهم بشرح دروس تعليمية ======================-->    
-    <section class="courses">
+<section class="courses">
 
         <h2>ساهم بشرح دروس تعليمية بأسلوبك وساعد الملايين من الطلاب</h2>
 
-        <div class="container courses__container">
+        <div dir="rtl" class="container courses__container">
             <article class="course">
                 <div class="course__img"><img src="images/snapshot.jpg" alt=""></div>
 
@@ -117,7 +116,7 @@
 
                 <div class="course__info">
                   <h4>حركة القمر</h4>
-                  <p>حركة القمر - العلوم - الصف الرابع الابتدائي - الترم الأول </p>
+                  <p>شرح لدرس حركة القمر - العلوم - الصف الرابع الابتدائي - الترم الأول </p>
                 </div>
 
                 <a href="course.html" class="btn btnText">تابع</a>
@@ -135,20 +134,20 @@
             </article>
         </div>
 
-    </section>
+</section>
 
 
     <!--================= SECTION 4 : أسال و أجب ======================-->  
-    <section dir="rtl" class="faqs">
+<section dir="rtl" class="faqs">
 
-        <h1>اسأل و أجب</h1>
+        <h1>الإجابات النموذجية</h1>
 
         <div class="container faqs__container">
             <article class="faq">
                 <div class="faq__icon"><img src="images/q.png" alt=""></div>
 
                 <div class="question__answer">
-                    <h4>علل يتم حفظ البوتاسيوم والصديوم تحت سطح الكيروسين ؟</h4>
+                    <h4>علل يتم حفظ البوتاسيوم تحت سطح الكيروسين ؟</h4>
                     <p>يتم حفظهما تحت سطح الكيروسين حتي لا يتفاعلوا مع اكسجين الهواء الرطب.</p>
                 </div>
             </article>
@@ -157,7 +156,7 @@
                 <div class="faq__icon"><img src="images/q.png" alt=""></div>
 
                 <div class="question__answer">
-                    <h4>ما معني جسم يقطع ٤٠ متر في ٥ ثواني في خط مستقيم ؟</h4>
+                    <h4>مامعني جسم يقطع 40 متر في 5 ثواني في خط مستقيم ؟</h4>
                     <p>جسم سرعته منتظمة.</p>
                 </div>
             </article>
@@ -166,7 +165,7 @@
                 <div class="faq__icon"><img src="images/q.png" alt=""></div>
                 
                 <div class="question__answer">
-                    <h4>ما الدولة التي تقع علي خط طول مختلف عن باقي الوطن العربي ؟</h4>
+                    <h4>ما الدولة التي علي خط طول مختلف عن باقي الوطن العربي ؟</h4>
                     <p>جزر القمر.</p>
                 </div>
             </article>
@@ -198,12 +197,12 @@
                 </div>
             </article>
         </div>
-    </section>
+</section>
 
 
     <!--================= SECTION 5 : أراء ======================-->  
-    <section class="container emo__container mySwiper">
-        <h2>قالوا عن نفهم</h2>
+<section class="container emo__container mySwiper">
+        <h1>قالوا عن نفهم</h1>
 
         <div class="swiper-wrapper">
             <article class="testimonial swiper-slide">
@@ -293,20 +292,20 @@
         </div>
 
         <div class="swiper-pagination"></div>
-    </section>
+</section>
 
 
 
 <!--================= Footer ======================-->    
 
-    <footer>
+<footer>
         <div class="container footer__container">
 
-            <div class="footer__2">
+            <div dir="rtl" class="footer__2">
                 <h4>تواصل معنا</h4>
 
                 <div>
-                    <p>01061060585</p>
+                    <p>01061060585 +</p>
                     <p>info@nafham.com</p>
                 </div>
 
@@ -329,7 +328,9 @@
                 <p >نفهم- جميع الحقوق محفوظة © 2022.</p>
             </div>
         </div>
-    </footer>
+
+        <div class="developer"><small>Developed By Eng-yasmine ali</small></div>
+</footer>
 
 
 

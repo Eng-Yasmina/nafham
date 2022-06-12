@@ -14,18 +14,20 @@
 :root{
     --color-header: #f0f0f0;
     --color-primary: #6c63ff;
-    --color-success: #00bf8e;
+    --color-success: #00a2ff;
     --color-warning: #ffb846;
-    --color-danger: #f75842;
+    --color-danger: #f742df;
     --color-danger-variant: rgba(247, 88, 66, 0.4);
     --color-white: #fff;
     --color-light: rgba(255,255,255,0.7);
     --color-dark:#ababab;
+    --color-bbydark:#838383;
     --color-bbyblack:#3e3e54;
-    --color-black: #000;
+    --color-black: #333;
     --color-bg: #0861d6;
     --color-bg1: #2e3267;
     --color-bg2: #424890;
+    --color3: #428bca;
 
     --container-width-lg: 80%;
     --container-width-md: 90%;
@@ -59,12 +61,12 @@ h2{font-size: 2.2rem; font-weight: 400;
     text-align: center; margin-bottom: 4rem;}
 h3{font-size: 2rem; font-weight: 400;}
 h4{font-size: 2rem; font-weight: 350;}
-h5{font-size: 1.4rem; font-weight: 390;}
+h5{font-size: 1.4rem; font-weight: 500;}
 h1,h2,h3,h4,h5{line-height: 1.2;}
 
 .btn{background:url(../images/botton.svg) no-repeat; background-size: contain; background-position: center; width: 16vw; cursor: pointer;transition: var(--transition);color: var(--color-bbyblack); border: 1px solid red;
 }
-.btn:hover{background:url(../images/botton\ -\ Copy.svg) no-repeat; color: var(--color-warning);}
+.btn:hover{background:url(../images/botton\ -\ Copy.svg) no-repeat; color: var(--color-warning);background-position-y: 2vh;}
 
 
 .btnText{
@@ -96,7 +98,7 @@ header{
     left: 0rem; top: 0; bottom: 0;
     z-index: -1;}
 
-.logo{width: 10rem; display: inline-block; border: 1px solid red}
+.logo{width: 15vw; display: inline-block; border: 1px solid red}
 
 header button {display: none;}
 
@@ -114,9 +116,10 @@ header button {display: none;}
 
 
 /* ============== SECTION 1 : الرئيسية ============ */
-#sec1{background: url(../images/main-bg.png) no-repeat; background-size: cover; background-position: center;}
+
 
 .section__container{
+    
     margin-top: 5rem;
     border: 1px solid red;
     display: grid;
@@ -128,10 +131,11 @@ header button {display: none;}
 
 .section__right p{
     border: 1px solid red;
-    margin:1rem 0 2.4rem;
+    margin-bottom:  2.4rem;
+    color: var(--color-black);
     font-size: 3vw;
     line-height: 4vw;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .section__right a{text-align: center;}
@@ -140,44 +144,46 @@ header button {display: none;}
 
   
 /* ============== SECTION 2 : التعليم الحر ================= */
+
+
 .categories{
-  padding-top: 7rem;
-  background: VAR(--color-bg1);  
-  height: 29rem;
+  padding-top: 7rem; 
+  height: 32rem;
+  background: url(../images/main-bg.png) no-repeat; background-size: cover; background-position: center;
 }
 
 
   .categories__container {
-    border: 1px solid red;
+      border: 1px solid red;
       display: grid;
       grid-template-columns: 40% 60%;
      
   }
 
   .categories__left h1{
-    line-height: 1; 
-    margin-bottom: 3rem;
+      line-height: 1; 
+      margin-bottom: 3rem;
   }
 
   .categories__left p{
       margin: 1rem 0 3rem;
       font-size: 1.5rem;
-    line-height: 2.5rem;
-    font-weight: 100;
-    padding-left: 1rem;
+      line-height: 2.5rem;
+      font-weight: 100;
+      padding-left: 1rem;
   }
 
   .categories__left a{text-align: center;}
 
   .categories__right{
-    border: 1px solid red;
+      border: 1px solid red;
       display: grid;
       grid-template-columns: repeat(2,1fr);
       gap: 1.2rem;
   }
 
   .category{
-      background: var(--color-bg2);
+      background: var(--color-primary);
       padding: 2rem;
       border-radius: 2rem;
       transition: var(--transition);
@@ -193,15 +199,13 @@ header button {display: none;}
 
 
 /* ============== SECTION 3 : ساهم بشرح دروس تعليمية================= */
-.courses{
-    
-    margin-top: 10rem;
-}
+.courses{margin-top: 10rem;}
 
 .courses h2{
     border: 1px solid red;
     margin-bottom: 2rem;
     text-align: center;
+    color: var(--color-black);
 }
 
 .courses__container{
@@ -212,14 +216,15 @@ header button {display: none;}
 }
 
 .course{
-    background: var(--color-bg1);
+    background: var(--color-success);
+    display: flex; flex-direction: column; justify-content: space-between; align-items: center;
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
 }
 
 .course:hover {
-    background: transparent;
+    background: var(--color-primary);
     border-color: var(--color-primary);
 }
 
@@ -227,16 +232,12 @@ header button {display: none;}
     padding: 2rem;
 }
 
-.course__info p{
-    margin: 1.2 0 2rem;
-}
-
 
 
 
 /* ============== SECTION 4 : اسال و اجب================= */
 .faqs{
-    background: var(--color-bg1);
+    background: url(../images/main-bg.png) no-repeat; background-size: cover; background-position: center;
     box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
 }
 
@@ -258,11 +259,12 @@ header button {display: none;}
     gap: 1.4rem;
     background: var(--color-primary);
     cursor: pointer ;
+    border-radius: 1rem;
 }
 
 .faq__icon{
     display: inline-block; 
-    width: 3rem;
+    width: 5rem;
     align-self: flex-start;
 }
 
@@ -286,6 +288,8 @@ header button {display: none;}
     margin-bottom: 5rem;
 }
 
+.emo__container h1{text-align: center; color: var(--color-black);}
+
 .testimonial{
     padding-top: 2rem;
 
@@ -297,15 +301,17 @@ header button {display: none;}
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 1rem;
-    border: 1rem solid var(--color-bg1);
+    border: 1rem solid var(--color-success);
 }
 
 .testimonial__info{
-    text-align: center;
-}
+    color: var(--color3);
+    text-align: center;}
+
+
 
 .testimonial__body{
-    background: var(--color-primary);
+    background: var(--color-success);
     padding: 2rem;
     margin-top: 3rem;
     position: relative;
@@ -314,7 +320,7 @@ header button {display: none;}
 .testimonial__body::before{
     content: "";
     display: block;
-    background: linear-gradient(135deg, transparent, var(--color-primary), var(--color-primary), var(--color-primary));
+    background: linear-gradient(135deg, transparent, var(--color-success), var(--color-success), var(--color-success));
     width: 3rem;
     height: 3rem;
     position: absolute;
@@ -326,7 +332,7 @@ header button {display: none;}
 /*================= footer ======================*/
 footer{
     background: var(--color-bg1);
-    padding: 5rem 0; 
+    padding: 5rem 0 0; 
 }
 
 .footer__container{
@@ -341,11 +347,228 @@ footer{
 
 .footer__1 p{
     margin: 1rem 0 2rem;
+    color: var(--color-dark);
 }
+.footer__1{text-align: center;}
+.footer__2{text-align: center;}
 
 .footer__socials{
     display: flex;
     gap: 1rem;
+    justify-content: center;
 }
 
 .soc{width: 3rem;}
+
+.developer{
+    text-align: center;
+    color: var(--color-dark);
+    font-size: large;
+    margin-top: 3rem;
+    padding: 1.2rem 0;
+    border-top: 0.1px solid var(--color-dark);
+}
+
+
+/*=============================================================================================================*/
+                                   /*MEDIA QUERIES(TABLETS)*/
+                                   /*======================*/
+@media screen and (max-width: 1024px){
+
+   .container{width: var(--container-width-md);}
+    h1{font-size: 2.2rem; font-weight: 300;}
+    h2{font-size: 1.7rem; font-weight: 300;}
+    h4{font-size: 1.4rem; font-weight: 300;}
+    h5{font-size: 1.3rem; font-weight: 490;}
+    h1,h2,h3,h4,h5{line-height: 1;}
+    .btn{width: 19vw;}
+    .btnText{font-size: 2.1vw};
+
+    /*========== HEADER ============*/
+    header{padding: 0.5rem 2rem;}
+    
+    header button{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: var(--color-bbyblack);
+        cursor: pointer;
+    }
+
+    #close-menu-btn{display: none;}
+
+    .header__menu{
+        position: fixed;
+        top: 5rem;
+        left: 5%;
+        height: fit-content;
+        width: 18rem;
+        display: none;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .header__menu a{
+        color: var(--color-white);
+        background: var(--color-success);
+        width: 100%;
+        height: 5.8rem;
+        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+        display: grid;
+        place-items: center;
+        animation: animateNavItems 400ms linear forwards;
+        transform-origin: top left;
+        opacity: 0;
+    }
+
+    .header__menu a:nth-child(2){
+        animation-delay: 200ms;
+    }
+    .header__menu a:nth-child(3){
+        animation-delay: 400ms;
+    }
+    .header__menu a:nth-child(4){
+        animation-delay: 600ms;
+    }
+
+    .header__menu a:hover{
+        background: var(--color-warning);
+    
+    }
+
+    @keyframes animateNavItems {
+        0%{transform: rotateZ(90deg) rotateX(-90deg) scale(0.1);}
+
+        100%{transform: rotateZ(0) rotateX(0) scale(1); opacity: 1}
+    }
+
+
+    /*========== SECTION1 : الرئيسية ============*/
+    .sec1{height: 52vh;
+    margin-bottom: 4rem;} 
+
+    .section__left-image{width: 48vw}
+    .section__right p{font-size: 1.9rem; line-height: 2.5rem;}
+
+    .section__container{
+        gap: 0;
+        padding-bottom: 3rem;
+    }
+
+
+    /*========== SECTION2 : التعليم الحر ============*/
+    .categories{
+        height: auto;
+        
+    }
+    .categories__container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        
+    }
+    .categories__right{order: 2; 
+        grid-template-columns: repeat(4,minmax(1px,15vw)); justify-content: center; align-items: center;}
+    
+
+    /*========== SECTION 3 : ساهم بشرح دروس تعليمية ============*/
+    .courses{margin-top: 0;}
+
+    .courses h2{font-weight: 300;}
+
+    .courses__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .course{flex: 0 1 35vw;}
+
+
+
+    /*========== SECTION 4 : أسال و أجب ============*/
+    .faqs__container{grid-template-columns: 1fr;
+    padding: 0 8vw;}
+
+    .faq__icon{width: 3rem;}   
+
+}
+
+
+@media screen and (max-width: 800px){
+    header{padding: 0.4rem 4rem 0 ;}
+    header button{margin-top: 0.7rem;width: 4.3rem;}
+    .logo{width: 17vw;}
+
+    .section__container{margin-top: 3rem;}
+    .section__right p{font-size: 1.6rem; line-height: 2rem;}
+}
+/*=============================================================================================================*/
+                                   /*MEDIA QUERIES (PHONES)*/
+                                   /*======================*/
+@media screen and (max-width: 600px) {
+
+    .container{width: var(--container-width-sm);}
+    h1{font-size: 2rem; font-weight: 290;}
+    h2{font-size: 1.5rem; font-weight: 290;}
+    h4{font-size: 1.2rem; font-weight: 390;}
+    h5{font-size: 1.2rem; font-weight: 450;}
+    h1,h2,h3,h4,h5{line-height: 1.2;}
+    .btn{width: 26vw;}
+    .btnText{font-size: 3vw};
+
+
+    /*========== HEADER ============*/
+    .header__menu{left: 3%;}
+     header{padding: 0.1rem 3rem 0;}
+     header button{margin-top: 0.7rem;width: 4.3rem;}
+     .logo{width: 17.7vw;}
+
+    /*========== SECTION1 : الرئيسية ============*/
+    .sec1{height: 100vh;}
+    .section__container{place-items: center;text-align: center; margin-top: 0;grid-template-columns: 1fr;}
+    .section__left-image{order: 2; width: 60vw; }
+    .section__right p{font-size: 4.8vw; line-height: 2.1rem; margin-bottom: 1.3rem;}
+
+
+    /*========== SECTION2 : التعليم الحر ============*/
+    .categories__right{order: 2; 
+        grid-template-columns: repeat(2,minmax(1px,30vw));}
+
+        .category{padding: 1rem; border-radius: 1.5rem;}
+
+        .categories__left h1{margin-bottom: 0;}
+
+        .categories__left p{
+        margin: 1rem 0;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+        font-weight: 100;
+        
+        }
+
+
+        /* ============== SECTION 3 : ساهم بشرح دروس تعليمية================= */
+        .course{flex: 0 1 60vw;}
+        .course__info p{font-weight: 100;}
+
+        .testimonial__body{padding: 1.2rem;}
+        .testimonial__body p{font-weight: 100;}
+
+
+        .footer__1 p{font-size: 0.8rem;}
+
+        .footer__container{
+            grid-template-columns: 1fr;
+            gap:2rem;
+        }
+    
+}
+@media screen and (max-width: 420px) {
+    header{padding: 0rem 3rem ;}
+     header button{margin-top: 0.7rem;width: 3rem;}
+     .logo{width: 16vw;}
+
+     .course{flex: 0 1 65vw;}
+
+     .footer__1 a{width: 20vw;}
+     .footer__1 p{font-size: 0.7rem;}
+}
