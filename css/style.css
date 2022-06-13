@@ -64,7 +64,7 @@ h4{font-size: 2rem; font-weight: 350;}
 h5{font-size: 1.4rem; font-weight: 500;}
 h1,h2,h3,h4,h5{line-height: 1.2;}
 
-.btn{background:url(../images/botton.svg) no-repeat; background-size: contain; background-position: center; width: 16vw; cursor: pointer;transition: var(--transition);color: var(--color-bbyblack);
+.btn{background:url(../images/botton.svg) no-repeat; background-size: contain; background-position: center; width: 16vw; cursor: pointer;transition: var(--transition);color: var(--color-bbyblack); border: 1px solid red;
 }
 .btn:hover{background:url(../images/botton\ -\ Copy.svg) no-repeat; color: var(--color-warning);background-position-y: 2vh;}
 
@@ -98,7 +98,7 @@ header{
     left: 0rem; top: 0; bottom: 0;
     z-index: -1;}
 
-.logo{width: 15vw; display: inline-block;}
+.logo{width: 15vw; display: inline-block; border: 1px solid red}
 
 header button {display: none;}
 
@@ -110,7 +110,7 @@ header button {display: none;}
 }
 
 .navigation a:hover {
-    color: #00c9ff;
+    color: #00e1ff;
 }
 
 
@@ -119,15 +119,18 @@ header button {display: none;}
 
 
 .section__container{
+    
     margin-top: 5rem;
+    border: 1px solid red;
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
 }
 
-.section__left-image{width: 40vw;}
+.section__left-image{width: 40vw;border: 1px solid red;}
 
 .section__right p{
+    border: 1px solid red;
     margin-bottom:  2.4rem;
     color: var(--color-black);
     font-size: 3vw;
@@ -136,8 +139,6 @@ header button {display: none;}
 }
 
 .section__right a{text-align: center;}
-
-.btn:hover{color: #06a7d2;}
 
 
 
@@ -153,6 +154,7 @@ header button {display: none;}
 
 
   .categories__container {
+      border: 1px solid red;
       display: grid;
       grid-template-columns: 40% 60%;
      
@@ -174,6 +176,7 @@ header button {display: none;}
   .categories__left a{text-align: center;}
 
   .categories__right{
+      border: 1px solid red;
       display: grid;
       grid-template-columns: repeat(2,1fr);
       gap: 1.2rem;
@@ -199,12 +202,14 @@ header button {display: none;}
 .courses{margin-top: 10rem;}
 
 .courses h2{
+    border: 1px solid red;
     margin-bottom: 2rem;
     text-align: center;
     color: var(--color-black);
 }
 
 .courses__container{
+    border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -462,7 +467,7 @@ footer{
         
     }
     .categories__right{order: 2; 
-        grid-template-columns: repeat(4,minmax(1px,15vw)); justify-content: center; align-items: center;}
+        grid-template-columns: repeat(4,minmax(1px,18vw)); justify-content: center; align-items: center;}
     
 
     /*========== SECTION 3 : ساهم بشرح دروس تعليمية ============*/
@@ -488,13 +493,21 @@ footer{
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
+    h5{font-size: 1rem; font-weight: 00;}
+
     header{padding: 0.4rem 4rem 0 ;}
     header button{margin-top: 0.7rem;width: 4.3rem;}
     .logo{width: 17vw;}
 
     .section__container{margin-top: 3rem;}
     .section__right p{font-size: 1.6rem; line-height: 2rem;}
+
+    .category{padding: 1rem;}
+    .categories__right{order: 2; 
+        grid-template-columns: repeat(4,minmax(1px,19vw)); justify-content: center; align-items: center;}
+
+    .question__answer p, .testimonial__body p{font-weight: 100;}
 }
 /*=============================================================================================================*/
                                    /*MEDIA QUERIES (PHONES)*/
