@@ -1,7 +1,8 @@
 # NAFHAM Landing Page with motion graphics(lottie.js)
 in this project i built a multi-section landing page, i used js(ES6) to ADD ANIMATIONS AND MOTION GRAPHICS. I also designed a custom fixed navigation bar, added a Q&A that's only visible when the user open the answer tab, and created a responsive layout to use across all devices, such as modern desktops, tablets, and phone browsers.
 # Demo Preview
-![landing-page-yasmine.gif](https://github.com/Eng-Yasmina/Landing-Page-dynamic-with-js-/blob/main/images/landing-page-yasmine.gif)
+![landing-page-yasmine.gif](https://github.com/Eng-Yasmina/nafham/blob/main/images/nafham.gif)
+![landing-page-yasmine.png](https://raw.githubusercontent.com/Eng-Yasmina/nafham/main/images/screencapture-eng-yasmina-github-io-nafham-2022-12-05-19_29_16.png)
 
 
 # Table of contents
